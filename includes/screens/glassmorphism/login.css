@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #080710;
+  --secondary-color: #ffffff21;
+  --shape-first-child-color1: #1845ad;
+  --shape-first-child-color2: #23a2f6;
+  --shape-second-child-color1: #ff512f;
+  --shape-second-child-color2: #f09819;
+  --login-border-color: rgba(255, 255, 255, 0.1);
+  --text-color: #ffffff;
+  --log-out-border-color: #0db8de;
+  --box-shadow-color: rgba(8, 7, 16, 0.6);
+  --text-font-size: 16px;
+  --input-field-bg-color: rgba(255, 255, 255, 0.07);
+  --logo-url: url("https://najeebmedia.com/_next/image?url=%2Fimages%2Flogo%2FNM-Logo-Ready.png&w=64&q=75");
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(
+    var(--shape-first-child-color1),
+    var(--shape-first-child-color2)
+  );
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(
+    var(--shape-second-child-color1),
+    var(--shape-second-child-color2)
+  );
+  right: -30px;
+  bottom: -80px;
+}
+
+#login {
+  width: 400px;
+  background-color: var(--secondar-color);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--login-border-color);
+  box-shadow: 0 0 40px var(--box-shadow-color);
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+}
+
+.login h1 a {
+  background-image: var(--logo-url);
+  background-size: 84px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 84px;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-decoration: none;
+  width: 84px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+
+form.shake #user_login,
+form.shake #user_pass {
+  color: #ff0000;
+}
+
+#login_error p {
+  color: #ff0000;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  border: 1px solid #ff0000;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+#login_error a {
+  color: #0db8de;
+}
+
+#login-message {
+  background-color: transparent;
+  color: var(--white-color-light);
+  font-size: var(--text-font-size);
+  margin-bottom: 20px;
+  border: 1px solid #0db8de;
+  padding: 10px 5px;
+}
+
+#login-message p {
+  margin-left: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#user_login,
+#user_pass {
+  display: block;
+  margin-top: 30px;
+  font-size: var(--text-font-size);
+  font-weight: 500;
+}
+
+.login .wp-pwd {
+  margin-top: 0;
+  position: relative;
+}
+
+.login .button.wp-hide-pw .dashicons {
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 0.25rem;
+}
+
+.login .button.wp-hide-pw {
+  background: 0 0;
+  border: 1px solid transparent;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0;
+  padding: 5px 9px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.loginform .wp-pwd button {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+}
+
+#user_login,
+#user_pass {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: var(--input-field-bg-color);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: var(--text-font-size);
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.forgetmenot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#wp-submit {
+  width: 100%;
+  background-color: var(--text-color);
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#login #nav,
+#login #backtoblog {
+  text-align: center;
+}
+
+#login #nav a,
+#login #backtoblog a {
+  text-decoration: none;
+  line-height: 1.5em;
+  color: var(--text-color);
+}
+
+#login #nav a:hover,
+#login #backtoblog a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .background {
+    display: none;
+  }
+  #login {
+    width: 85%;
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  #login {
+    width: 80%;
+    padding: 30px 15px;
+  }
+  .shape:first-child {
+    left: 12px;
+    top: -54px;
+  }
+  .shape:last-child {
+    right: 11px;
+    bottom: -58px;
+  }
+}

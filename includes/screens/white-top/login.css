@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #f6f7fc;
+  --secondary-color: #fff;
+  --button-color: #fb771a;
+  --header-url: url("https://preview.colorlib.com/theme/bootstrap/login-form-03/images/bg_1.jpg.webp");
+  --logo-url: url("https://najeebmedia.com/_next/image?url=%2Fimages%2Flogo%2FNM-Logo-Ready.png&w=64&q=75");
+  --text-font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Noto Sans";
+  font-size: var(--text-font-size);
+}
+
+#header {
+  background: var(--header-url);
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+}
+
+#wrapper-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#login {
+  width: 500px;
+  height: 650px;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  margin-top: -30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login h1 a {
+  background-image: var(--logo-url);
+  background-size: 84px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 84px;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-decoration: none;
+  width: 84px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+
+.login .wp-pwd {
+  margin-top: 0;
+  position: relative;
+}
+
+.login .button.wp-hide-pw .dashicons {
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 0.25rem;
+}
+
+.login .button.wp-hide-pw {
+  background: 0 0;
+  border: 1px solid transparent;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0;
+  padding: 5px 9px;
+  position: absolute;
+  right: 0;
+  top: 19px;
+}
+
+.loginform .wp-pwd button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+form.shake #user_login,
+form.shake #user_pass {
+  color: #ff0000;
+}
+
+#login_error p {
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  border: 2px solid #ff0000;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+
+#login-message {
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 2px solid #0db8de;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+
+#login-message p {
+  margin-left: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#loginform input.input {
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  background: #efefef;
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+#loginform input.input:focus {
+  outline: none;
+}
+
+#loginform input[type="submit"] {
+  color: var(--secondary-color);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  font-family: "Noto Sans";
+  font-size: 16px;
+}
+
+#login #nav,
+#login #backtoblog {
+  text-align: center;
+  line-height: 1.4em;
+  color: #212529;
+}
+
+#login #nav a,
+#login #backtoblog a {
+  text-decoration: none;
+  color: #212529;
+}
+
+#login #nav a:hover,
+#login #backtoblog a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  #login {
+    width: 350px;
+  }
+  
+}
+
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  #login {
+    width: 400px;
+  }
+}

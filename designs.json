@@ -1,0 +1,86 @@
+[
+    {
+        "id": "design1.png",
+        "screen":"black-key",
+        "title": "Black Key",
+        "fields": [
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "primary_color", "type": "color", "label": "Primary Color", "root_variable":"--primary-color" },
+            { "key": "secondary_color", "type": "color", "label": "Secondary Color", "root_variable":"--secondary-color" },
+            { "key": "text_font_size", "type": "text", "label": "Text Font Size (e.g 12px)", "root_variable":"--text-font-size" }
+        ]
+    },
+    {
+        "id": "design2.png",
+        "screen":"black-hope",
+        "title": "Black Hope",
+        "fields": [
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "primary_color", "type": "color", "label": "Primary Color", "root_variable":"--primary-color" },
+            { "key": "input_border_color", "type": "color", "label": "Input Border Color", "root_variable":"--input-border-color" },
+            { "key": "tilt_bg_color1", "type": "color", "label": "Gradient Color 1", "root_variable":"--tilt-bg-color1" },
+            { "key": "tilt_bg_color2", "type": "color", "label": "Gradient Color 2", "root_variable":"--tilt-bg-color2" },
+            { "key": "text_color", "type": "color", "label": "Text Color", "root_variable":"--text-color" },
+            { "key": "text_font_size", "type": "text", "label": "Text Font Size (e.g 12px)", "root_variable":"--text-font-size" }
+            
+            
+        ],
+        "before_login": "<div class=\"tilted-background\"><span class=\"bg-animation\"></span>",
+        "after_login": "<aside id=\"side-bar\"><div id=\"logo-container\"></div></aside></div>"
+    },
+    {
+        "id": "design3.webp",
+        "screen":"blue-street",
+        "title": "Blue Street",
+        "fields": [
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "primary_color", "type": "color", "label": "Primary Color", "root_variable":"--primary-color" },
+            { "key": "secondary_color", "type": "color", "label": "Secondary Color", "root_variable":"--secondary-color" },
+            { "key": "input_field_bg_color", "type": "color", "label": "Input Field Color", "root_variable":"--input-field-bg" },
+            { "key": "text_color", "type": "color", "label": "Text Color", "root_variable":"--text-color" },
+            { "key": "text_font_size", "type": "text", "label": "Text Font Size (e.g 12px)", "root_variable":"--text-font-size" }
+            
+            
+        ],
+        "before_login": "<div id=\"login-wrap\">",
+        "after_login": "</div>"
+    },
+    {
+        "id": "design4.png",
+        "screen":"glassmorphism",
+        "title": "Glassmorphism",
+        "fields": [
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "primary_color", "type": "color", "label": "Primary Color", "root_variable":"--primary-color" },
+            { "key": "secondary_color", "type": "color", "label": "Secondary Color", "root_variable":"--secondary-color" },
+            { "key": "shape_first_child_color1", "type": "color", "label": "First Shape Color 1", "root_variable":"--shape-first-child-color1" },
+            { "key": "shape_first_child_color2", "type": "color", "label": "First Shape Color 2", "root_variable":"--shape-first-child-color2" },
+            { "key": "shape_second_child_color1", "type": "color", "label": "Second Shape Color 1", "root_variable":"--shape-second-child-color1" },
+            { "key": "shape_second_child_color2", "type": "color", "label": "Second Shape Color 2", "root_variable":"--shape-second-child-color2" },
+            { "key": "input_field_bg_color", "type": "color", "label": "Input Field Color", "root_variable":"--input-field-bg-color" },
+            { "key": "text_color", "type": "color", "label": "Text Color", "root_variable":"--text-color" },
+            { "key": "text_font_size", "type": "text", "label": "Text Font Size (e.g 12px)", "root_variable":"--text-font-size" }
+            
+        ],
+        "before_login": "<div id=\"wrapper\"><div class=\"background\"><div class=\"shape\"></div> <div class=\"shape\"></div></div>",
+        "after_login": "</div>"
+    },
+    {
+        "id": "design5.png",
+        "screen":"white-top",
+        "title": "White Top",
+        "fields": [
+            { "key": "logo_url", "type": "text", "label": "Logo URL", "root_variable":"--logo-url" },
+            { "key": "header_url", "type": "text", "label": "Header URL", "root_variable":"--header-url" },
+            { "key": "primary_color", "type": "color", "label": "Primary Color", "root_variable":"--primary-color" },
+            { "key": "secondary_color", "type": "color", "label": "Secondary Color", "root_variable":"--secondary-color"},
+            { "key": "button_color", "type": "color", "label": "Button Color", "root_variable":"--button-color" },
+            { "key": "text_font_size", "type": "text", "label": "Text Font Size (e.g 12px)", "root_variable":"--text-font-size" }
+            
+            
+        ],
+        "before_login": "<div id=\"header\"></div><div id=\"wrapper-login\">",
+        "after_login": "</div>"
+    }
+]
